@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "password": "ogUnsoVrNvJLqULFDRsU",
+    "database": "finance-app-elliotk",
+    "multipleStatements": true
+}
