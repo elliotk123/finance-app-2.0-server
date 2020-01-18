@@ -3,6 +3,7 @@ const router = express.Router();
 const getFrequencies = require('../controllers/frequencies/getFrequencies');
 const addFrequency = require('../controllers/frequencies/addFrequency');
 const getFrequencyById = require('../controllers/frequencies/getFrequencyById');
+const deleteFrequencyById = require('../controllers/frequencies/deleteFrequency');
 
 router.use((req, res, next) => {
     res.set({
@@ -16,5 +17,6 @@ router.route('/')
     .get(getFrequencies.controller)
     .post(addFrequency.controller);
 router.route('/:frequencyId')
-    .get(getFrequencyById.controller);
+    .get(getFrequencyById.controller)
+    .delete(deleteFrequencyById.controller);
 module.exports = router;
