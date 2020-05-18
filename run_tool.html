@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Run Tool</title>
+ 
+    <HTA:APPLICATION
+        APPLICATIONNAME = "Run Tool"
+    />
+</head>
+<SCRIPT LANGUAGE="VBScript">
+	Sub RunCmd(command) 
+		Set objShell = CreateObject("Wscript.Shell")
+		objShell.Run "cmd /k" & command
+	End Sub
+</SCRIPT>
+<body>
+	<div>
+		<h1>Run</h1>
+		<button onclick="RunCmd('node app.js')">Run Server</button>
+	</div>
+	<div>
+		<h1>Database</h1>
+		<button onclick="RunCmd('npm create-tables')">Create Tables</button>
+		<button onclick="RunCmd('npm drop-tables')">Drop Tables</button>
+	</div>
+	<div>
+		<h1>NPM Packages</h1>
+		<button onclick="RunCmd('npm i')">Update</button>
+	</div>
+</body>
+ 
+</html>
