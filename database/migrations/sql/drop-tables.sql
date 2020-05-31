@@ -1,18 +1,18 @@
 DROP TABLE Week_Expense;
 
-DROP TABLE Week_Income;
+DROP TABLE Week_Account;
 
 DROP TABLE State_Expense;
 
 DROP TABLE Expenses;
 
-DROP TABLE Week;
+DROP TABLE Expense_Parent;
 
-DROP TABLE Incomes;
+DROP TABLE Week;
 
 DROP TABLE State;
 
-DROP TABLE Frequencies;
+DROP TABLE Accounts;
 
-DROP TABLE Expense_Parent;
+
 

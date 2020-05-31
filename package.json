@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "create-db": "node database/migrations/createDB.js",
     "create-tables": "node database/migrations/run-query.js ../sql-connection-elliotk.json database/migrations/sql/create-tables.sql",
     "drop-tables": "node database/migrations/run-query.js ../sql-connection-elliotk.json database/migrations/sql/drop-tables.sql"
   },

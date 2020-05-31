@@ -2,11 +2,11 @@ const express = require('express');
 const namedErrors = require('./utils/namedError.json');
 const app = express();
 const port = 3000;
-const frequencyRouter = require('./router/frequencyRouter');
+const weeksRouter = require('./router/weeksRouter');
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json())
-app.use('/frequencies', frequencyRouter);
+app.use('/weeks', weeksRouter);
 app.use(function (err, req, res, next) {
     console.log(err);
     var errorCode = 500;
